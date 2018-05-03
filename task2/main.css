@@ -1,0 +1,36 @@
+div {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #f7f7f7;
+    border: 1px solid #ededed;
+    margin-right: 50px;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 60px;
+}
+    .box1 {
+        transform: skewX(30deg);
+        -webkit-transform: skewX(30deg);
+        -moz-transform: skewX(30deg);
+    }
+    .box2 {
+        transform: scaleX(0.5);
+        -webkit-transform: scaleX(0.5);
+        -moz-transform: scaleX(0.5);
+    }
+    .box3 {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+    }
+    .box4 {
+        transform: translate(10px, 20px);
+        -webkit-transform: translate(10px, 20px);
+        -moz-transform: translate(10px, 20px);
+    }
+    .box5 {
+        transform: matrix(1, 1, 0, 1, 10, 45);
+        -webkit-transform: matrix(1, 1, 0, 1, 10, 45);
+        -moz-transform: matrix(1, 1, 0, 1, 10, 45);
+    }
