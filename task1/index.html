@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="box">
+        <h1 class="title">前端学院</h1>
+        <p class="ver"></p>
+        <button class="btn">切换样式</button>
+    </div>
+    <script>
+        var isOn = false;
+        var btn = document.querySelector(".btn");
+        var title = document.querySelector(".title");
+        var ver = document.querySelector(".ver");
+        btn.addEventListener("click", function(){
+            if(!isOn) {
+                ver.classList.add("on")
+                title.classList.add("active")
+                isOn = true;
+            } else {
+                ver.classList.remove("on")
+                title.classList.remove("active")
+                isOn = false;
+            }
+        })
+    </script>
+</body>
+</html>
